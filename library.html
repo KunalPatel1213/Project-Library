@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="library.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <div class="main-content">
+        <div class="nav">
+            <header>
+                <a class="lab">LIBRARY</a>
+                <i id="logo" class="fa-solid fa-book"></i>
+                <a href="/Home">Home</a>
+                <a href="/Books">Books</a>
+                <a href="/Issue">Issue</a>
+                <a href="/Student">Student</a>
+                <a href="/AddBook">Add Book</a>
+                <a href="/Reports">Reports</a>
+                <a href="/Notification">Notification</a>
+                <a href="#" id="loginLink">Login</a>
+                <a href="/Contact">Contact</a>
+                <i id="pen" class="fa-solid fa-pen"></i>
+            </header>
+        </div>
+
+        <div class="img">
+            <p class="wl">Welcome to our Library</p>
+            <p class="show">
+                Take a look at your book <a href="#" class="click" id="viewBooks">Click here</a>
+            </p>
+        </div>
+
+        <div class="about">
+            <h2 class="lb">LIBRARY RULES</h2>
+            <div class="rules">
+                <p>
+                    Libraries are serene environments dedicated to focused reading,
+                    learning, and academic enrichment, making it crucial to maintain
+                    silence at all times. Loud conversations, ringing phones, or any kind
+                    of disturbance should be strictly avoided to ensure a respectful
+                    atmosphere for fellow readers. Mobile phones must be kept on silent,
+                    and personal devices should be used discreetly. Borrowed books must be
+                    returned within the due date to avoid fines, and utmost care must be
+                    taken to prevent damage—writing, folding pages, or tearing is not
+                    allowed. While individual study is encouraged throughout the library,
+                    group study is permitted only in designated collaborative zones.
+                    Library computers and internet access are provided strictly for
+                    educational, research, or professional use, and browsing inappropriate
+                    content or accessing personal social media accounts is discouraged.
+                    Users should refrain from bringing food and beverages into the
+                    premises to maintain cleanliness and protect library materials.
+                    Photography, videography, or photocopying requires prior approval from
+                    the library staff. Additionally, users are expected to carry valid ID
+                    cards while using library facilities, maintain proper seating
+                    etiquette, and follow any specific instructions provided by librarians
+                    or posted notices. Adhering to these rules ensures that the library
+                    remains a welcoming, efficient, and fair space for all users.
+                </p>
+                <img
+                    id="library-image"
+                    src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D"
+                />
+            </div>
+        </div>
+
+        <div class="books-container">
+            <h3 class="top">Top 5% most-read books</h3>
+            <div class="books">
+                <div class="book">
+                    <img src="Clean code.png" />
+                    <button class="issue-btn" data-id="103">Read now</button>
+                </div>
+
+                <div class="book">
+                    <img src="The Pragmatic Progra.png" />
+                    <button class="issue-btn" data-id="107">Read now</button>
+                </div>
+
+                <div class="book">
+                    <img src="Code Complete.png" />
+                    <button class="issue-btn" data-id="108">Read now</button>
+                </div>
+
+                <div class="book">
+                    <img src="Design Patterns.png" />
+                    <button class="issue-btn" data-id="109">Read now</button>
+                </div>
+
+                <div class="book">
+                    <img src="c.png" />
+                    <button class="issue-btn" data-id="110">Read now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="collection-container">
+            <div class="collection">
+                <h1>Books Collection</h1>
+                <div class="box-container">
+                    <div class="box" style="background-image: url('Python\ Crash\ Course_.png');">
+                        <button class="issue-btn" data-id="101">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('JavaScript_\ The\ Good.png');">
+                        <button class="issue-btn" data-id="102">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('Clean\ code.png');">
+                        <button class="issue-btn" data-id="103">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('You\ Don\'t\ Know\ JS_\ E.png');">
+                        <button class="issue-btn" data-id="104">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('Java_\ Learn\ Java\ in\ .png');">
+                        <button class="issue-btn" data-id="105">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('HTML\ and\ CSS_\ Design.png');">
+                        <button class="issue-btn" data-id="106">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('The\ Pragmatic\ Progra.png');">
+                        <button class="issue-btn" data-id="107">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('Amazon.com_\ C++\ Prim.png');">
+                        <button class="issue-btn" data-id="108">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('Introduction\ to\ Algo.png');">
+                        <button class="issue-btn" data-id="109">Issue now</button>
+                    </div>
+
+                    <div class="box" style="background-image: url('Generative\ AI\ for\ We.png');">
+                        <button class="issue-btn" data-id="110">Issue now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>Our library is dedicated to providing quality resources and fostering a love for reading and learning in our community.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/Home">Home</a></li>
+            <li><a href="/Books">Books</a></li>
+            <li><a href="/Issue">Issue Books</a></li>
+            <li><a href="/Contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Library St, Bookville</p>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@librarysystem.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Library Management System. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Library Login</h2>
+        <div class="form-group">
+          <label for="cardId">Card ID:</label>
+          <input type="text" id="cardId" placeholder="Enter your Card ID">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter your Password">
+        </div>
+        <div class="form-actions">
+          <button id="loginBtn">Login</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="issueModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Issue Book</h2>
+        <div id="bookInfo"></div>
+        <div class="form-group">
+          <label for="studentName">Your Name:</label>
+          <input type="text" id="studentName" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <input type="text" id="department" placeholder="Enter your department">
+        </div>
+        <div class="form-group">
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" placeholder="Enter your branch">
+        </div>
+        <div class="form-group">
+          <label for="libraryId">Library ID:</label>
+          <input type="text" id="libraryId" placeholder="Enter your Library ID">
+        </div>
+        <div class="form-actions">
+          <button id="issueBookBtn">Issue Book</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="bookListModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Available Books</h2>
+        <div id="bookList"></div>
+      </div>
+    </div>
+
+    <div id="returnModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Return Book</h2>
+        <div id="returnInfo"></div>
+        <div class="form-group">
+          <label for="returnDays">In how many days did you return the book?</label>
+          <input type="number" id="returnDays" placeholder="Enter number of days">
+        </div>
+        <div class="form-actions">
+          <button id="calculateFineBtn">Calculate Fine</button>
+        </div>
+        <div id="fineResult" style="margin-top: 20px;"></div>
+      </div>
+    </div>
+
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Issued Successfully</h2>
+        <div class="confirmation" id="confirmationDetails"></div>
+        <div class="form-actions">
+          <button id="confirmOkBtn">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>
